@@ -5,7 +5,9 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "prettier"
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -14,5 +16,8 @@
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error"
+    // "react/jsx-wrap-multilines": {
+    //   "return": "parens"
+    // }
   }
 }
