@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-function MyName(props: { name: string }): React.ReactElement {
-  const { name } = props;
-  return <div className="MyName">My name is{name}</div>;
+interface Props {
+  name?: string;
 }
+const MyName: FC<Props> = ({ name = 'defaultName' }) => {
+  console.log('render my name ');
+  return <div className="MyName">My name is {name}</div>;
+};
 
 export default MyName;
